@@ -82,6 +82,17 @@ namespace FastBitmapLib
         public bool Locked { get; private set; }
 
         /// <summary>
+        /// The internal bitmap being worked on
+        /// </summary>
+        public Bitmap Bitmap
+        {
+            get
+            {
+                return _bitmap;
+            }
+        }
+
+        /// <summary>
         /// Gets an array of 32-bit color pixel values that represent this FastBitmap
         /// </summary>
         /// <exception cref="Exception">The locking operation required to extract the values off from the underlying bitmap failed</exception>
